@@ -1,0 +1,21 @@
+body {
+  background: #efe8dd;
+  font-family: "Raleway", sans-serif;
+  color: ivory;
+  font-size: 20px;
+}
+
+.drop-down-button{
+    border: none;
+    background-color: transparent;
+}
+
+.drop-down-button:hover{
+    cursor: pointer;
+    color: rgb(0, 38, 255);
+}
+.container {
+  max-width: 55ch;
+  margin: auto;
+  color: #36454F;
+}
