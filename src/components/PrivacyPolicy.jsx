@@ -1,10 +1,19 @@
 import headLogo from "./photos/DarmeseqHeader.png";
 import Dropdown from "./Dropdown";
+import { useNavigate } from "react-router-dom";
 
 function PrivacyPolicy() {
+  const navigate = useNavigate();
   return (
     <div className="app">
-      <img src={headLogo} alt="img" className="headLogo" />
+      <img
+        onClick={() => {
+          navigate("/");
+        }}
+        src={headLogo}
+        alt="img"
+        className="headLogo"
+      />
       <Dropdown />
       <p>
         At Darmeseq.com, we are committed to protecting the privacy of our

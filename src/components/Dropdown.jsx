@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 
 const DropdownMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [english, setEnglish] = useState(true);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -19,7 +20,17 @@ const DropdownMenu = () => {
           <li className="dropdown-menu__item">
             <button
               onClick={() => {
-                navigate("/about");
+                navigate("/");
+              }}
+              className="drop-down-button"
+            >
+              HOME
+            </button>
+            </li>
+          <li className="dropdown-menu__item">
+            <button
+              onClick={() => {
+                navigate("/about_en");
               }}
               className="drop-down-button"
             >
@@ -27,12 +38,19 @@ const DropdownMenu = () => {
             </button>
           </li>
           <li className="dropdown-menu__item">
-            <button className="drop-down-button">CONTACT US</button>
+            <button
+              onClick={() => {
+                navigate("/contact-us_en");
+              }}
+              className="drop-down-button"
+            >
+              CONTACT US
+            </button>
           </li>
           <li className="dropdown-menu__item">
             <button
               onClick={() => {
-                navigate("/privacy-policy");
+                navigate("/privacy-policy_en");
               }}
               className="drop-down-button"
             >

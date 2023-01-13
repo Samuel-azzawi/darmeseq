@@ -1,0 +1,26 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.App {
+    min-height: calc(100vh - 70px);
+    padding-bottom: 0;
+    margin: 10px;
+}
+
+footer {
+    font-size: small;
+    color: rgb(103, 101, 101);
+    background-color: rgba(159, 155, 155, 0.247);
+    height: 50px;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
