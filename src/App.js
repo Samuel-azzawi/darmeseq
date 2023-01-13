@@ -1,16 +1,11 @@
 import "./App.css";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
-import { useState } from "react";
 import Home from "./components/Home";
+import About from "./components/About";
+import PrivacyPolicy from "./components/PrivacyPolicy";
 function App() {
-  const [user, setUser] = useState("");
   return (
     <BrowserRouter>
-      <nav>
-        <Link to="/reviews"></Link>
-        <Link to="/reviews/:id"></Link>
-      </nav>
-
       <Routes>
         <Route
           path="/"
@@ -20,8 +15,9 @@ function App() {
             </div>
           }
         />
-        <Route path="/reviews/:id" element={<div></div>} />
-        <Route path="/reviews" element={<div></div>} />
+        <Route path="/about" element={<div><About/></div>} />
+        <Route path="/contact-us" element={<div></div>} />
+        <Route path="/privacy-policy" element={<div><PrivacyPolicy/></div>} />
       </Routes>
     </BrowserRouter>
   );
