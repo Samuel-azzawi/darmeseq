@@ -1,11 +1,70 @@
-.headLogo{
-    margin: 10px;
-    width:98%;
+.headLogo {
+  margin: 10px;
+  width: 98%;
 }
-.headLogo:hover{
-    cursor: pointer;
+.headLogo:hover {
+  cursor: pointer;
 }
-.navbar{
-    width: 50px;
-    height: 50px;
+.navbar {
+  width: 50px;
+  height: 50px;
+}
+.home_info {
+  font-size: large;
+  border: 2px solid black;
+  padding: 0 10px;
+  margin-top: 10px;
+  border-radius: 10px;
+  box-shadow: gray 0 10px 15px 0;
+  background-color: rgba(214, 183, 163, 0.466);
+}
+.dropdown-menu {
+  display: flex;
+  background-color: rgba(74, 102, 211, 0.414);
+  padding: 15px;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.dropdown-menu__button {
+  --b: 3px;   /* border thickness */
+  --s: .30em; /* size of the corner */
+  --color: #373B44;
+  padding: calc(.5em + var(--s)) calc(.9em + var(--s));
+  color: var(--color);
+  --_p: var(--s);
+  background:
+    conic-gradient(from 90deg at var(--b) var(--b),#0000 90deg,var(--color) 0)
+    var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
+  transition: .3s linear, color 0s, background-color 0s;
+  outline: var(--b) solid #0000;
+  outline-offset: .6em;
+  font-size: 16px;
+
+  border: 0;
+
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.dropdown-menu__button:hover,
+.dropdown-menu__button:focus-visible{
+  --_p: 0px;
+  outline-color: var(--color);
+  outline-offset: .05em;
+}
+
+.dropdown-menu__button:active {
+  background: var(--color);
+  color: #fff;
+}
+
+.galleryContainer {
+  margin-top: 10px;
+}
+
+.mainPageShow {
+
 }

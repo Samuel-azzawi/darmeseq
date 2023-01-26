@@ -1,12 +1,15 @@
 import "./App.css";
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./components/Home";
 import About from "./components/About";
 import PrivacyPolicy from "./components/PrivacyPolicy";
 import ContactUs from "./components/ContactUs";
+import UserContext from "./UserContext/UserContext"
+import { useState } from "react";
 function App() {
+  const [language, setLanguage] = useState("عربي");
   return (
-    <>
+    <UserContext.Provider value={{language, setLanguage}}>
       <div className="App">
         <BrowserRouter>
           <Routes>
@@ -46,7 +49,7 @@ function App() {
         </BrowserRouter>
       </div>
       <footer>Copyright &copy; DARMESEQ. All Rights Reserved.</footer>
-    </>
+    </UserContext.Provider>
   );
 }
 export default App;

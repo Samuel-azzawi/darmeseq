@@ -1,9 +1,14 @@
-.fb_img{
-width: 15px;
-background-color: black;
-border-radius: 20px;
+.fb_img {
+  width: 15px;
+  background-color: black;
+  border-radius: 20px;
 }
 
 .fb_img:hover {
-    cursor: pointer;
+  cursor: pointer;
+}
+
+.arabicText {
+  direction: rtl;
+  unicode-bidi: embed;
 }

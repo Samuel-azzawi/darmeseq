@@ -1,19 +1,31 @@
 import React, { useState } from "react";
 import "./Dropdown.css";
 import { useNavigate } from "react-router-dom";
+import { UserContext } from "../UserContext/UserContext";
+import { useContext } from "react";
 
 const DropdownMenu = () => {
+  const { language, setLanguage } = useContext(UserContext);
   const [isOpen, setIsOpen] = useState(false);
-  const [english, setEnglish] = useState(true);
-
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
   const navigate = useNavigate();
+  const changeLanguage = (e) => {
+    e.preventDefault();
+    setLanguage(!language);
+    if (language === "English") setLanguage("عربي");
+    if (language === "عربي") setLanguage("English");
+  };
   return (
     <div className="dropdown-menu">
+      <button
+        onClick={(e) => {
+          changeLanguage(e);
+        }}
+      >{`${language}`}</button>
       <button className="dropdown-menu__button" onClick={toggleMenu}>
-        Menu
+        {language === "English" ? "القائمة" : "Menu"}
       </button>
       {isOpen && (
         <ul className="dropdown-menu__list">
@@ -24,9 +36,9 @@ const DropdownMenu = () => {
               }}
               className="drop-down-button"
             >
-              HOME
+              {language === "English" ? "الرئيسية" : "HOME"}
             </button>
-            </li>
+          </li>
           <li className="dropdown-menu__item">
             <button
               onClick={() => {
@@ -34,7 +46,7 @@ const DropdownMenu = () => {
               }}
               className="drop-down-button"
             >
-              ABOUT
+              {language === "English" ? "حول" : "ABOUT"}
             </button>
           </li>
           <li className="dropdown-menu__item">
@@ -44,7 +56,7 @@ const DropdownMenu = () => {
               }}
               className="drop-down-button"
             >
-              CONTACT US
+              {language === "English" ? "اتصل بنا" : "CONTACT US"}
             </button>
           </li>
           <li className="dropdown-menu__item">
@@ -54,7 +66,7 @@ const DropdownMenu = () => {
               }}
               className="drop-down-button"
             >
-              PRIVACY POLICY
+              {language === "English" ? "سياسة الخصوصية" : "PRIVACY POLICY"}
             </button>
           </li>
         </ul>

@@ -1,0 +1,4 @@
+.arabicText {
+  direction: rtl;
+  unicode-bidi: embed;
+}
