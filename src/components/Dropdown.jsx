@@ -19,7 +19,9 @@ const DropdownMenu = () => {
   };
   return (
     <div className="dropdown-menu">
+      
       <button
+        className="langBut"
         onClick={(e) => {
           changeLanguage(e);
         }}
