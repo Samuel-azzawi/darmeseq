@@ -69,7 +69,7 @@ function ContactUs() {
           </p>{" "}
         </>
       ) : (
-        <dev className="arabicText">
+        <div className="arabicText">
           {" "}
           <p>
             في <b> دارمسيك</b> ، نحن نقدر ملاحظاتك ونكرس أنفسنا لتزويدك بأفضل
@@ -82,7 +82,7 @@ function ContactUs() {
           </p>
           <ul>
             <li>
-             صفحتنا على الفيسبوك : 
+              صفحتنا على الفيسبوك :
               <a
                 target="_blank"
                 href="https://www.facebook.com/Darmeseqcodev"
@@ -112,7 +112,7 @@ function ContactUs() {
             <br />
             شكرا لاختيارك لنا كشريك في البناء.
           </p>
-        </dev>
+        </div>
       )}
     </div>
   );

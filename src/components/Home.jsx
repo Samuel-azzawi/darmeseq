@@ -9,8 +9,7 @@ import { useContext } from "react";
 function Home() {
   const { language } = useContext(UserContext);
   const navigate = useNavigate();
-  console.log(language)
-  
+
   return (
     <div className="app">
       <img
@@ -23,7 +22,7 @@ function Home() {
       />
       <Dropdown />
       <div className="mainPageShow">
-        {language === "عربي"? (
+        {language === "عربي" ? (
           <div className="home_info">
             <p>
               At Darmeseq, we understand the importance of quality construction

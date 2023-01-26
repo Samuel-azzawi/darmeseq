@@ -9,7 +9,6 @@
   transition: ease 1000ms;
 }
 
-
 .slide {
   object-fit: contain;
   display: inline-block;
@@ -39,6 +38,6 @@
   background-color: #6a0dad;
 }
 
-.slide:hover{
+.slide:hover {
   transform: scale(1.01);
 }

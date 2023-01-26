@@ -14,7 +14,7 @@ function About() {
   const [isOpenTeamA, setIsOpenTeamA] = useState(false);
   const [isOpenServicesA, setIsOpenServicesA] = useState(false);
   const { language } = useContext(UserContext);
-  console.log(language)
+
   const navigate = useNavigate();
 
   const goal = () => {

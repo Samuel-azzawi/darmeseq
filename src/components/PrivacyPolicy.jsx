@@ -3,7 +3,7 @@ import Dropdown from "./Dropdown";
 import { useNavigate } from "react-router-dom";
 import { UserContext } from "../UserContext/UserContext";
 import { useContext } from "react";
-import "./PrivacyPolicy.css"
+import "./PrivacyPolicy.css";
 function PrivacyPolicy() {
   const { language } = useContext(UserContext);
   const navigate = useNavigate();
@@ -114,9 +114,7 @@ function PrivacyPolicy() {
           </button>
         </p>
       ) : (
-        <p
-          className="arabicText"
-        >
+        <p className="arabicText">
           في Darmeseq.com ، نحن ملتزمون بحماية خصوصية مستخدمينا. تنطبق سياسة
           الخصوصية هذه على موقعنا وتشرح كيف نجمع المعلومات التي نجمعها من خلال
           الموقع ونستخدمها ونكشف عنها.

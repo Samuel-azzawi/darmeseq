@@ -4,12 +4,12 @@ import Home from "./components/Home";
 import About from "./components/About";
 import PrivacyPolicy from "./components/PrivacyPolicy";
 import ContactUs from "./components/ContactUs";
-import UserContext from "./UserContext/UserContext"
+import UserContext from "./UserContext/UserContext";
 import { useState } from "react";
 function App() {
   const [language, setLanguage] = useState("عربي");
   return (
-    <UserContext.Provider value={{language, setLanguage}}>
+    <UserContext.Provider value={{ language, setLanguage }}>
       <div className="App">
         <BrowserRouter>
           <Routes>
@@ -22,7 +22,7 @@ function App() {
               }
             />
             <Route
-              path="/about_en"
+              path="/about"
               element={
                 <div>
                   <About />
@@ -30,7 +30,7 @@ function App() {
               }
             />
             <Route
-              path="/contact-us_en"
+              path="/contact-us"
               element={
                 <div>
                   <ContactUs />
@@ -38,7 +38,7 @@ function App() {
               }
             />
             <Route
-              path="/privacy-policy_en"
+              path="/privacy-policy"
               element={
                 <div>
                   <PrivacyPolicy />

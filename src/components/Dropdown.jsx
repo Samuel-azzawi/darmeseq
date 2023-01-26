@@ -5,6 +5,8 @@ import { UserContext } from "../UserContext/UserContext";
 import { useContext } from "react";
 
 const DropdownMenu = () => {
+  const queryParameters = new URLSearchParams(window.location.search);
+  const name = queryParameters.get("name");
   const { language, setLanguage } = useContext(UserContext);
   const [isOpen, setIsOpen] = useState(false);
   const toggleMenu = () => {
@@ -19,7 +21,6 @@ const DropdownMenu = () => {
   };
   return (
     <div className="dropdown-menu">
-      
       <button
         className="langBut"
         onClick={(e) => {
@@ -44,7 +45,7 @@ const DropdownMenu = () => {
           <li className="dropdown-menu__item">
             <button
               onClick={() => {
-                navigate("/about_en");
+                navigate("/about");
               }}
               className="drop-down-button"
             >
@@ -54,7 +55,7 @@ const DropdownMenu = () => {
           <li className="dropdown-menu__item">
             <button
               onClick={() => {
-                navigate("/contact-us_en");
+                navigate("/contact-us");
               }}
               className="drop-down-button"
             >
@@ -64,7 +65,7 @@ const DropdownMenu = () => {
           <li className="dropdown-menu__item">
             <button
               onClick={() => {
-                navigate("/privacy-policy_en");
+                navigate("/privacy-policy");
               }}
               className="drop-down-button"
             >
@@ -73,6 +74,19 @@ const DropdownMenu = () => {
           </li>
         </ul>
       )}
+      <p className="dropDownName">
+        {language === "عربي"
+          ? (window.location.pathname === "/privacy-policy" &&
+              "Privacy policy") ||
+            (window.location.pathname === "/" && "Home") ||
+            (window.location.pathname === "/about" && "About") ||
+            (window.location.pathname === "/contact-us" && "Contact us")
+          : (window.location.pathname === "/privacy-policy" &&
+              "سياسة الخصوصية") ||
+            (window.location.pathname === "/" && "الرئيسية") ||
+            (window.location.pathname === "/about" && "حول") ||
+            (window.location.pathname === "/contact-us" && "اتصل بنا")}
+      </p>
     </div>
   );
 };

@@ -5,25 +5,28 @@ body {
   font-size: 20px;
 }
 
-
-.drop-down-button{
-    border: none;
-    background-color: transparent;
+.drop-down-button {
+  border: none;
+  background-color: transparent;
 }
 
-.drop-down-button:hover{
-    cursor: pointer;
-    color: rgb(0, 38, 255);
+.drop-down-button:hover {
+  cursor: pointer;
+  color: rgb(0, 38, 255);
 }
 .container {
   max-width: 55ch;
   margin: auto;
-  color: #36454F;
+  color: #36454f;
 }
 
-.langBut{
-position: absolute;
-left: 15px;
+.langBut {
+  position: absolute;
+  left: 15px;
+}
+.dropDownName {
+  position: absolute;
+  right: 20px;
 }
 
 .langBut {
@@ -36,7 +39,7 @@ left: 15px;
   border-radius: 15px 225px 255px 15px 15px 255px 225px 15px;
   border-style: solid;
   border-width: 2px;
-  box-shadow: rgba(0, 0, 0, .2) 15px 28px 25px -18px;
+  box-shadow: rgba(0, 0, 0, 0.2) 15px 28px 25px -18px;
   box-sizing: border-box;
   color: #41403e;
   cursor: pointer;
@@ -45,7 +48,7 @@ left: 15px;
   font-size: 1rem;
   line-height: 23px;
   outline: none;
-  padding: .75rem;
+  padding: 0.75rem;
   text-decoration: none;
   transition: all 235ms ease-in-out;
   border-bottom-left-radius: 15px 255px;
@@ -58,10 +61,10 @@ left: 15px;
 }
 
 .langBut:hover {
-  box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
+  box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px -5px;
   transform: translate3d(0, 2px, 0);
 }
 
 .langBut:focus {
-  box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
+  box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 4px -6px;
 }
