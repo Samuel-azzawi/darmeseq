@@ -48,9 +48,9 @@ function About() {
       />
       <Dropdown />
       {language === "عربي" ? (
-        <ul className="dropdown-menu__list">
-          <li className="dropdown-menu__item">
-            <button onClick={goal} className="drop-down-button">
+        <ul className="about-ul">
+          <li className="about-li">
+            <button onClick={goal} className="about-button">
               Our goal
             </button>
           </li>
@@ -61,8 +61,8 @@ function About() {
               competitive prices
             </p>
           )}
-          <li className="dropdown-menu__item">
-            <button onClick={team} className="drop-down-button">
+          <li className="about-li">
+            <button onClick={team} className="about-button">
               Our team
             </button>
           </li>
@@ -80,8 +80,8 @@ function About() {
               solutions.
             </p>
           )}
-          <li className="dropdown-menu__item">
-            <button onClick={services} className="drop-down-button">
+          <li className="about-li">
+            <button onClick={services} className="about-button">
               Our services
             </button>
           </li>
@@ -105,9 +105,9 @@ function About() {
           )}
         </ul>
       ) : (
-        <ul className="dropdown-menu__list">
-          <li className="dropdown-menu__item">
-            <button onClick={goalA} className="drop-down-button">
+        <ul className="about-ul arabicText">
+          <li className="about-li">
+            <button onClick={goalA} className="about-button">
               هدفنا
             </button>
           </li>
@@ -117,16 +117,16 @@ function About() {
               ضمن جودة عالية وبأسعار منافسة
             </p>
           )}
-          <li className="dropdown-menu__item">
-            <button onClick={teamA} className="drop-down-button">
+          <li className="about-li">
+            <button onClick={teamA} className="about-button">
               فريقنا
             </button>
           </li>
           {isOpenTeamA && (
             <p>مجموعة من المهندسين والفنيين أصحاب الخبرة العالية</p>
           )}
-          <li className="dropdown-menu__item">
-            <button onClick={servicesA} className="drop-down-button">
+          <li className="about-li">
+            <button onClick={servicesA} className="about-button">
               خدماتنا
             </button>
           </li>

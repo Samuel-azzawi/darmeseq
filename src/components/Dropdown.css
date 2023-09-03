@@ -8,6 +8,7 @@ body {
 .drop-down-button {
   border: none;
   background-color: transparent;
+  cursor: pointer;
 }
 
 .drop-down-button:hover {
@@ -27,6 +28,14 @@ body {
 .dropDownName {
   position: absolute;
   right: 20px;
+  top: 0;
+  color: #9a4207;
+  font-family: "Rouge Script", cursive;
+  font-size: 50px;
+  font-weight: normal;
+  line-height: 48px;
+  margin: 0 0 50px;
+  text-shadow: 1px 1px 2px #082b34;
 }
 
 .langBut {
@@ -63,8 +72,23 @@ body {
 .langBut:hover {
   box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px -5px;
   transform: translate3d(0, 2px, 0);
+  cursor: pointer;
 }
 
 .langBut:focus {
   box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 4px -6px;
 }
+.dropdown-menu_container {
+  position: flex;
+  flex-direction: column;
+}
+
+.dropdown-menu__list {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  transition: all 1s ease-in-out;
+  background-color: aqua;
+  cursor: pointer;
+}
+

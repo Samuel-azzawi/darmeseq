@@ -60,7 +60,7 @@ function Home() {
             </p>
           </div>
         ) : (
-          <div className="home_info">
+          <div className="home_info arabicText">
             <p>
               نسعى دائما لتحقيق الريادة في السوق العقاري من خلال تقديم أعلى
               معايير الجودة في التصاميم الفذة للعقارات السكنية وان نقدم اعمالنا
